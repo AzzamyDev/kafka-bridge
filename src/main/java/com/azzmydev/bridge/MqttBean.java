@@ -32,9 +32,8 @@ public class MqttBean {
         DefaultMqttPahoClientFactory factory = new DefaultMqttPahoClientFactory();
         MqttConnectOptions options = new MqttConnectOptions();
 
-        options.setServerURIs(new String[] {"tcp://192.168.18.205:1883"});
+        options.setServerURIs(new String[] {"tcp://192.168.18.205"});
         options.setCleanSession(true);
-
         factory.setConnectionOptions(options);
 
         return factory;
