@@ -1,12 +1,19 @@
 spring:
   kafka:
+#    ssl:
+#      protocol: SSL
+#      trust-store-location: classpath:/app/store/truststore.jks
+#      trust-store-password: <TURST_STORE_PASSWORD>
+#      key-store-location: classpath:/app/store/keystore.jks
+#      key-store-password: <KEY_STORE_PASSWORD>
+#      key-password: <KEY_PASSWORD>
     consumer:
-      bootstrap-servers: 192.168.18.205:9092
+      bootstrap-servers: <YOUR_SERVER>:9092
       group-id: group_id
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
     producer:
-      bootstrap-servers: 192.168.18.205:9092
+      bootstrap-servers: <YOUR_SERVER>:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
