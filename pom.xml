@@ -13,10 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bridge </name>
 	<description>Bridge </description>
-	<properties>
-		<start-class>>com.azzmydev.bridge.BridgeApplication</start-class>
-		<java.version>18</java.version>
-	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -62,6 +59,9 @@
 			<artifactId>spring-boot-maven-plugin</artifactId>
 			<version>2.7.0</version>
 		</dependency>
+
+
+
 	</dependencies>
 
 	<build>
@@ -69,24 +69,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<archive>
-						<manifest>
-							<mainClass>com.azzmydev.bridge.BridgeApplication</mainClass>
-						</manifest>
-					</archive>
-					<descriptorRefs>
-						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs>
-					<finalName>standalone</finalName>
-
-					<source>8</source>
-					<target>8</target>
-				</configuration>
 			</plugin>
 
 		</plugins>
